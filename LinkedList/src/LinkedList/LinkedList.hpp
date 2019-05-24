@@ -1,29 +1,19 @@
-#ifndef _LINKED_LIST_HPP__
-#define _LINKED_LIST_HPP__
+#ifndef __LINKED_LIST_HPP
+#define __LINKED_LIST_HPP
 
-class Node {
+#include "Node.hpp"
+
+class LinkedList {
 
 public:
-
-    /**
-     * Constructor function for Node
-     */
-    Node();
-
-    /**
-     * Destructor function for Node
-     */
-    ~Node();
-
-    void SetData(int newData);
-    int GetData() const;
-
-    void SetNextNode(Node* newNextNode);
-    Node *GetNextNode();
+    LinkedList();
+    ~LinkedList();
+    bool IsEmpty();
+    void AppendToList(int newValue);
+    void DeleteItem(int deleteValue);
+    bool Search(int searchValue);
 private:
-
-    int data;
-    Node *nextNode;
+    Node *rootNode;
 };
 
 #endif

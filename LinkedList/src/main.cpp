@@ -4,9 +4,12 @@
 int main() {
 
     std::cout << "Hello World\n";
-    Node *rootNode = new Node();
-    rootNode->SetData(5);
-    std::cout << "The data is " << rootNode->GetData() << "\n";
-    delete rootNode;
+    LinkedList newList;
+    if (newList.IsEmpty()) {
+
+        std::cout << "List is empty\n";
+    } else {
+        std::cout << "List is not empty\n";
+    }
     return 0;
 }

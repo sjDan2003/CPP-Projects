@@ -8,6 +8,7 @@ set(CPPUTEST_LDFLAGS CppUTest CppUTestExt)
 set(TEST_APP_NAME ${APP_NAME}_tests)
 set(TEST_SOURCES
     NodeTests.cpp
+    LinkedListTests.cpp
     main.cpp
 )
 
