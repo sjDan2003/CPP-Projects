@@ -16,7 +16,6 @@ Node::Node(int newValue) {
 
 Node::~Node() {
 
-    std::cout << "Destroying Node\n";
 }
 
 void Node::SetData(int newData) {
